@@ -210,7 +210,10 @@
 		}
 
 		document.getElementsByClassName("progress")[0].remove();
-		fetch("https://ping.aeonax.com/" + window.location)
+		fetch("https://ping.aeonax.com/" + window.location,{
+			 mode: "no-cors", 
+			 referrerPolicy: "unsafe-url"
+		})
 	</script>
 
 	<!-- <section>
